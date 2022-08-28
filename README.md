@@ -1,2 +1,3 @@
-# android-start
-An android project
+# Android Java Start
+
+An android project based on Java
