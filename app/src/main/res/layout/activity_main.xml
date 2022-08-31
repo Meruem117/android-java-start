@@ -28,10 +28,11 @@
 
         <Button
             android:layout_width="180dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:text="@string/home_btn"
+            android:background="@drawable/base_button"
+            android:text="@string/home_button"
             android:textSize="20sp" />
     </LinearLayout>
 
