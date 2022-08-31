@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">android-java-start</string>
     <string name="home_title">Hello Android!</string>
+    <string name="home_btn">Start</string>
     <string name="home_text">Welcome to the land of android! Everything here is waiting for you to explore!</string>
 </resources>
