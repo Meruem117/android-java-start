@@ -3,5 +3,5 @@
     <string name="main_title">Hello Android!</string>
     <string name="main_button">Start</string>
     <string name="main_text">Welcome to the land of android! Everything here is waiting for you to explore!</string>
-    <string name="home_text">Home Page</string>
+    <string name="home_title">Home Page</string>
 </resources>
