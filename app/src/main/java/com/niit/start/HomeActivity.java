@@ -9,13 +9,11 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private TextView home_text;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        home_text = findViewById(R.id.home_text);
+        TextView home_text = findViewById(R.id.home_text);
         Button home_button = findViewById(R.id.home_button);
         home_button.setOnClickListener(new HomeButtonOnClickListener(home_text));
     }
@@ -29,6 +27,8 @@ public class HomeActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
+            String text = "test";
+            home_text.setText(text);
         }
     }
 }
