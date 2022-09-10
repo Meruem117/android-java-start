@@ -2,7 +2,7 @@ package com.niit.start.utils;
 
 import android.content.Context;
 
-public class Utils {
+public class BaseUtils {
 
     /**
      * 根据手机分辨率将dp单位转化成px
