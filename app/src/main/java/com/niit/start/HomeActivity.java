@@ -18,6 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView home_text = findViewById(R.id.home_text);
         Button home_button = findViewById(R.id.home_button);
         home_button.setOnClickListener(new HomeButtonOnClickListener(home_text));
+        home_button.setOnLongClickListener(new HomeButtonOnLongClickListener(home_text));
     }
 
     static class HomeButtonOnClickListener implements View.OnClickListener {
@@ -29,8 +30,23 @@ public class HomeActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            String text = DateUtils.getNowDatetime();
+            String text = DateUtils.getNowTime();
             home_text.setText(text);
+        }
+    }
+
+    static class HomeButtonOnLongClickListener implements View.OnLongClickListener {
+        private final TextView home_text;
+
+        public HomeButtonOnLongClickListener(TextView home_text) {
+            this.home_text = home_text;
+        }
+
+        @Override
+        public boolean onLongClick(View view) {
+            String text = DateUtils.getNowDate();
+            home_text.setText(text);
+            return true;
         }
     }
 }
