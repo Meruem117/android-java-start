@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.niit.start.utils.DateUtils;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -27,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            String text = "test";
+            String text = DateUtils.getNowDatetime();
             home_text.setText(text);
         }
     }

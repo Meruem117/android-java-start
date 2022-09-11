@@ -13,7 +13,6 @@ public class BaseUtils {
      * @return
      */
     public static int DipToPx(Context context, float value) {
-        // 获取当前手机的像素密度(1dp对应几个px)
         float scale = context.getResources().getDisplayMetrics().density;
         return (int) (value * scale + 0.5f);
     }
